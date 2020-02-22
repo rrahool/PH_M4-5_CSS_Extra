@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class & Element</title>
+    <style>
+        /* Style for Pseudo Class */
+        input:focus{
+            font-weight: 700;
+            font-size: 20px;
+            color: green;
+        }
+        li:nth-child(2n){
+            background-color: indianred;
+        }
+
+        /* Style for Pseudo Element */
+        h1::before{
+            content: "New ";
+            font-size: 50px;
+            color: orangered;
+        }
+        /* body{
+            counter-reset: section;
+        } */
+        p::before{
+            /* counter-increment: section;
+            content: "Crush " counter(section) ": "; */
+            content: "❤️";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Element</h1>
+    <h1>Normal Element</h1>
+
+    <label for="email">Email: </label>
+    <input name="email" type="text">
+    <br><br>
+    <label for="password">Password: </label>
+    <input name="password" type="text">
+
+    <ul>
+        <p>Alia</p>
+        <p>Dalia</p>
+        <p>Nalia</p>
+        <p>Kalia</p>
+        <p>Jalia</p>
+        <p>Falia</p>
+        <p>Nalia</p>
+    </ul>
+</body>
+</html>
